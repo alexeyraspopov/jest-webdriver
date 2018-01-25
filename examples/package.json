@@ -1,0 +1,15 @@
+{
+  "name": "examples",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alexey Raspopov",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "~22.1.4",
+    "jest-environment-webdriver": "*"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-webdriver"
+  }
+}
