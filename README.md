@@ -11,3 +11,4 @@ The project is in progress. It only supports running [preinstalled](https://gith
 The project includes next packages:
 
  * [`jest-environment-webdriver`](./packages/jest-environment-webdriver)
+ * [`jest-screenshot-reporter`](./packages/jest-screenshot-reporter)
