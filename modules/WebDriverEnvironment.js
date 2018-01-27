@@ -1,10 +1,11 @@
 const NodeEnvironment = require('jest-environment-node');
-const { Builder, Capabilities, By, until } = require('selenium-webdriver');
+const { Builder, By, until } = require('selenium-webdriver');
 
 class WebDriverEnvironment extends NodeEnvironment {
-  constructor(options) {
-    super(options);
-    this.browserName = options.testEnvironmentOptions.browser || 'chrome';
+  constructor(config) {
+    super(config);
+    const options = config.testEnvironmentOptions || {};
+    this.browserName = options.browser || 'chrome';
   }
 
   async setup() {
