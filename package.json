@@ -15,6 +15,11 @@
   "peerDependencies": {
     "jest": "~22.1.4"
   },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "examples"
+    ]
+  },
   "engines": {
     "node": "8.x"
   }
