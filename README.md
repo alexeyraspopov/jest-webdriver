@@ -6,11 +6,17 @@ Connect [Jest](http://facebook.github.io/jest/) tests to [Selenium WebDriver](ht
 
 ## Limitations
 
-The project is in progress. Currently it only supports running Chrome WebDriver without additional options. Capabilities configuration, screenshots report, and browser selection will be added soon.
+The project is in progress. It only supports running [preinstalled](https://github.com/SeleniumHQ/selenium/tree/master/javascript/node/selenium-webdriver#installation) WebDrivers (Chrome, Safari, Firefox, Edge, IE) without additional options. Capabilities configuration, screenshots report will be added soon.
 
 ## Usage
 
-Set [`testEnvironment`](http://facebook.github.io/jest/docs/en/configuration.html#testenvironment-string) to `jest-environment-webdriver`.
+Set [`testEnvironment`](https://facebook.github.io/jest/docs/en/configuration.html#testenvironment-string) to `jest-environment-webdriver`.
+
+Select target browser using [`testEnvironmentOptions`](https://facebook.github.io/jest/docs/en/configuration.html#testenvironmentoptions-object):
+
+    "testEnvironmentOptions": {
+      "browser": "safari"
+    }
 
 ## Environment API
 
