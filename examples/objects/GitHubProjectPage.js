@@ -5,7 +5,8 @@ class GitHubProjectPage {
 
   async getLicenseType() {
     const label = await element(this.licenseLabel);
-    return label.getText();
+    const licenseText = await label.getText();
+    return licenseText.trim();
   }
 }
 
