@@ -10,6 +10,9 @@
     "jest-environment-webdriver": "*"
   },
   "jest": {
-    "testEnvironment": "jest-environment-webdriver"
+    "testEnvironment": "jest-environment-webdriver",
+    "testEnvironmentOptions": {
+      "browser": "chrome"
+    }
   }
 }
