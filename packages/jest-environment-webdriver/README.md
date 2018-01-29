@@ -21,4 +21,5 @@ Next global objects and functions are available in testing code.
  * `browser` — reference to [`WebDriver`](http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebDriver.html) instance
  * `by` — alias to [`By`](http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_By.html)
  * `element` — alias to [`Driver#findElement`](http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElement)
+ * `element.all` — alias to [`Driver#findElements`](http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElements)
  * `until` — alias to [`until`](http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html).
