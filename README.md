@@ -8,7 +8,7 @@ The project is in progress. It only supports running [preinstalled](https://gith
 
 ## Usage
 
-The project includes next packages:
+The project includes next packages that are available via NPM:
 
- * [`jest-environment-webdriver`](./packages/jest-environment-webdriver)
- * [`jest-screenshot-reporter`](./packages/jest-screenshot-reporter)
+ * [`jest-environment-webdriver`](./packages/jest-environment-webdriver) — custom Jest environment that allows tests to communicate with Selenium WebDriver
+ * [`jest-screenshot-reporter`](./packages/jest-screenshot-reporter) — complementary Jasmine reporter that captures screenshots for failed tests
