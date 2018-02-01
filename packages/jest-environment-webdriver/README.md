@@ -6,10 +6,9 @@ Connect [Jest](http://facebook.github.io/jest/) tests to [Selenium WebDriver](ht
 
 ## Usage
 
-Set [`testEnvironment`](https://facebook.github.io/jest/docs/en/configuration.html#testenvironment-string) to `jest-environment-webdriver`.
+Set [`testEnvironment`](https://facebook.github.io/jest/docs/en/configuration.html#testenvironment-string) to `jest-environment-webdriver` and select target browser using [`testEnvironmentOptions`](https://facebook.github.io/jest/docs/en/configuration.html#testenvironmentoptions-object):
 
-Select target browser using [`testEnvironmentOptions`](https://facebook.github.io/jest/docs/en/configuration.html#testenvironmentoptions-object):
-
+    "testEnvironment": "jest-environment-webdriver",
     "testEnvironmentOptions": {
       "browser": "safari"
     }
