@@ -4,7 +4,7 @@ Connect [Jest](http://facebook.github.io/jest/) tests to [Selenium WebDriver](ht
 
 ## Limitations
 
-The project is in progress. It only supports running [preinstalled](https://github.com/SeleniumHQ/selenium/tree/master/javascript/node/selenium-webdriver#installation) WebDrivers (Chrome, Safari, Firefox, Edge, IE) without additional options. Capabilities configuration will be added soon.
+The project is in progress. It only supports running [preinstalled](https://github.com/SeleniumHQ/selenium/tree/master/javascript/node/selenium-webdriver#installation) WebDrivers (Chrome, Safari, Firefox, Edge, IE) without additional options. Capabilities configuration will be added soon. Pull requests welcomed.
 
 ## Usage
 
