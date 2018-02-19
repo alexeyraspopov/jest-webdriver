@@ -1,3 +1,3 @@
-const JestScreenshotReporter = require('jest-screenshot-reporter');
+let JestScreenshotReporter = require('jest-screenshot-reporter');
 
 jasmine.getEnv().addReporter(new JestScreenshotReporter({ browser }));

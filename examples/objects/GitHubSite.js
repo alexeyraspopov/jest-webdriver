@@ -1,5 +1,5 @@
-const { URL } = require('url');
-const GitHubProjectPage = require('./GitHubProjectPage');
+let { URL } = require('url');
+let GitHubProjectPage = require('./GitHubProjectPage');
 
 class GitHubSite {
   constructor() {
@@ -7,7 +7,7 @@ class GitHubSite {
   }
 
   async openProject(projectPath) {
-    const url = new URL(projectPath, this.url);
+    let url = new URL(projectPath, this.url);
     await browser.get(url);
     return new GitHubProjectPage();
   }
