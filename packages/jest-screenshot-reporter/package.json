@@ -14,6 +14,9 @@
   "peerDependencies": {
     "jest": "^22.1.4"
   },
+  "devDependencies": {
+    "jest": "^22.1.4"
+  },
   "engines": {
     "node": "8.x"
   }
