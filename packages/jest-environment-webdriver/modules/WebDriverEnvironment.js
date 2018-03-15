@@ -6,14 +6,17 @@ class WebDriverEnvironment extends NodeEnvironment {
     super(config);
     const options = config.testEnvironmentOptions || {};
     this.browserName = options.browser || 'chrome';
+    this.usingServer = options.usingServer || null;
   }
 
   async setup() {
     await super.setup();
-
-    const driver = await new Builder()
-      .forBrowser(this.browserName)
-      .build();
+    
+    let driver = await new Builder();
+    if (this.usingServer) {
+      driver = await driver.usingServer(this.usingServer);
+    }
+    driver = await driver.forBrowser(this.browserName).build();
 
     this.driver = driver;
 
