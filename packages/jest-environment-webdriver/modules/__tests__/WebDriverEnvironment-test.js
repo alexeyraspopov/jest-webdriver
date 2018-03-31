@@ -20,11 +20,20 @@ test('browser name configuration', () => {
   expect(environment.browserName).toBe('safari');
 });
 
-test('environment setup', async () => {
+test('browser environment setup', async () => {
   const config = { testEnvironmentOptions: { browser: 'firefox' } };
   const environment = new WebDriverEnvironment(config);
   await environment.setup();
   expect(new Builder().forBrowser).toHaveBeenCalledWith('firefox');
+  expect(new Builder().build).toHaveBeenCalled();
+});
+
+test('server environment setup', async () => {
+  const seleniumAddress = 'http://localhost:4444/wd/hub';
+  const config = { testEnvironmentOptions: { seleniumAddress } };
+  const environment = new WebDriverEnvironment(config);
+  await environment.setup();
+  expect(new Builder().usingServer).toHaveBeenCalledWith(seleniumAddress);
   expect(new Builder().build).toHaveBeenCalled();
 });
 

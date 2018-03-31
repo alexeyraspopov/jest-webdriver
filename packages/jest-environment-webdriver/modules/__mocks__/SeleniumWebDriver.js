@@ -1,5 +1,6 @@
 const builder = {
   forBrowser: jest.fn(() => builder),
+  usingServer: jest.fn(() => builder),
   build: jest.fn(() => new Driver()),
 };
 
