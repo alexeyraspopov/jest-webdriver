@@ -12,5 +12,9 @@
     "projects": [
       "packages/*"
     ]
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "ci": "sh scripts/integration.sh"
   }
 }
