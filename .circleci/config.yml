@@ -9,7 +9,7 @@ jobs:
 
       - run:
           name: Install Dependencies
-          command: yarn install --ignore-scripts
+          command: yarn install --ignore-scripts --no-lockfile
 
       - run:
           name: Run Tests
