@@ -2,6 +2,5 @@
   "name": "jest-webdriver",
   "private": true,
   "dependencies": {
-    "lerna": "^2.8.0"
   }
 }
