@@ -2,5 +2,15 @@
   "name": "jest-webdriver",
   "private": true,
   "dependencies": {
+    "jest": "^22.4.3",
+    "jest-junit": "^3.6.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "jest": {
+    "projects": [
+      "packages/*"
+    ]
   }
 }
