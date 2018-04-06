@@ -2,6 +2,9 @@
   "name": "jest-screenshot-reporter",
   "version": "0.1.0",
   "description": "Capture screenshots for failed tests on Selenium WebDriver",
+  "author": "Alexey Raspopov",
+  "license": "MIT",
+  "repository": "alexeyraspopov/jest-webdriver",
   "main": "modules/JestScreenshotReporter.js",
   "scripts": {
     "test": "jest"
