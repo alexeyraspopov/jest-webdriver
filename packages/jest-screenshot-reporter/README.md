@@ -10,12 +10,16 @@ While Jest reporters mechanism does not allow doing stuff after each test, the s
 
 Create a file for Jasmine configuration:
 
-    const JestScreenshotReporter = require('jest-screenshot-reporter');
-    jasmine.getEnv().addReporter(new JestScreenshotReporter({ browser }));
+```javascript
+const JestScreenshotReporter = require('jest-screenshot-reporter');
+jasmine.getEnv().addReporter(new JestScreenshotReporter({ browser }));
+```
 
 And add it Jest config:
 
-    "setupTestFrameworkScriptFile": "./jasmine.config.js",
+```javascript
+"setupTestFrameworkScriptFile": "./jasmine.config.js",
+```
 
 ## Reporter API
 
