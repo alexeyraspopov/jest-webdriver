@@ -29,7 +29,10 @@ class WebDriverEnvironment extends NodeEnvironment {
 
   async teardown() {
     if (this.driver) {
-      await this.driver.close();
+      // https://github.com/alexeyraspopov/jest-webdriver/issues/8
+      try {
+        await this.driver.close();
+      } catch (error) { }
 
       // https://github.com/mozilla/geckodriver/issues/1151
       try {
